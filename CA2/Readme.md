@@ -2,106 +2,75 @@
 
 ### **From-Scratch Implementation + Feature Engineering with Scikit-Learn**
 
-This project is an end-to-end **Natural Language Processing (NLP)** exercise focused on building and evaluating text classification models using both **from-scratch implementations** and **standard machine learning libraries**.
-
-It demonstrates strong proficiency in **Python**, **machine learning fundamentals**, **mathematical modeling**, and **NLP preprocessing pipelines**, while showcasing the ability to implement core algorithms manually without relying on external ML libraries.
+This project is an NLP workflow for building and evaluating text classifiers using both **manual implementations** and **scikit-learn models**. It highlights strong skills in **Python**, **machine learning fundamentals**, **mathematical modeling**, and **text preprocessing**, including implementing ML algorithms without relying on external libraries.
 
 ---
 
 ## 🚀 Project Overview
 
-The assignment consists of two major parts:
+Two main components were developed:
 
 ---
 
-## **1️⃣ Logistic Regression & Naive Bayes — Implemented From Scratch (60 points)**
+## **1️⃣ Logistic Regression & Naive Bayes — From Scratch**
 
-This section demonstrates a full low-level implementation of two classical machine learning algorithms.
-I manually implemented:
+Manual implementation of two classic ML algorithms.
 
-### 🔧 **Data Preprocessing**
+### **Data Preprocessing**
 
-* Text normalization (lowercasing, trimming whitespace)
+* Text normalization
 * Tokenization
-* **Bag-of-Words (BoW)** vectorization built from scratch
-* Train/test splitting without external utilities
+* Custom **Bag-of-Words** vectorizer
+* Manual train/test split
 
-### 📊 **Evaluation Metrics (Manual Implementation)**
+### **Evaluation Metrics**
 
 * Accuracy
 * Precision
 * Recall
-* F1-Score
+* F1-score
 
-### 🤖 **Model Implementation**
+### **Model Implementation**
 
-* **Logistic Regression from scratch**, including:
+* **Logistic Regression:** sigmoid, cross-entropy loss, gradient descent, weight updates
+* **Multinomial Naive Bayes:** likelihood estimation, Laplace smoothing, log-probability
 
-  * Sigmoid function
-  * Cross-entropy loss
-  * Gradient descent optimization
-  * Weight updates and convergence
-* **Multinomial Naive Bayes from scratch**, including:
+### **Result Analysis**
 
-  * Likelihood estimation
-  * Laplace smoothing
-  * Log-probability formulation
-
-### 📈 **Result Analysis**
-
-* Performance comparison between Logistic Regression & Naive Bayes
-* Discussion of advantages, limitations, and behavior of each model
+* Comparing both models
+* Discussing performance differences and limitations
 
 ---
 
-## **2️⃣ Logistic Regression & Naive Bayes using Sklearn**
+## **2️⃣ Logistic Regression & Naive Bayes with Scikit-Learn**
 
-The second part focuses on **advanced feature engineering** and evaluates classical ML models using the scikit-learn ecosystem.
+This section focuses on feature engineering and classical ML modeling using sklearn.
 
-### 🧩 **Feature Extraction**
+### **Feature Extraction**
 
-Structured, statistical, and content-based features were engineered, including:
+* **Structural:** message length, word count, avg token length, special character ratio
+* **Statistical/Content:** TF-IDF, n-grams, stop-word frequency, case ratios
+* **Custom Features:** domain-specific binary/count-based indicators
 
-#### 🔹 Structural Features
-
-* Message length
-* Word count
-* Average token length
-* Special character ratios
-
-#### 🔹 Statistical & Content Features
-
-* N-gram features
-* Term Frequency–Inverse Document Frequency (TF-IDF)
-* Stop-word frequency
-* Uppercase/lowercase ratios
-
-#### 🔹 Custom Features
-
-* Hand-crafted domain-specific indicators
-* Binary and count-based features relevant to the text classification task
-
-### 🧪 **Model Training**
+### **Model Training**
 
 * Logistic Regression (sklearn)
-* MultinomialNB (sklearn)
-* Comparison with from-scratch models
+* Multinomial Naive Bayes (sklearn)
+* Comparison with from-scratch performance
 
 ---
 
-## 🛠️ **Technologies & Skills Demonstrated**
+## **Technologies & Skills Demonstrated**
 
-### **NLP & Data Processing**
+### **NLP & Preprocessing**
 
-✔ Manual text normalization and feature extraction
-✔ Bag-of-Words vectorizer implementation
-✔ Experience with TF-IDF, n-grams, and statistical feature engineering
+✔ Custom normalization and feature extraction
+✔ Manual Bag-of-Words
+✔ TF-IDF, n-grams, and statistical features
 
 ### **Machine Learning**
 
-✔ Mathematical implementation of Logistic Regression
-✔ Mathematical implementation of Multinomial Naive Bayes
-✔ Understanding of loss functions, gradients, and optimization
-✔ Evaluation metrics implemented manually
-✔ Use of scikit-learn models and utilities
-
+✔ Full mathematical implementation of Logistic Regression & Naive Bayes
+✔ Gradient-based optimization and loss functions
+✔ Manual metric computation
+✔ Use of scikit-learn for modeling and feature engineering
